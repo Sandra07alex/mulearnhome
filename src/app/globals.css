@@ -1,6 +1,6 @@
-@import "tailwindcss";
-
-@plugin "tailwindcss-animate";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* MuLearn Brand Colors */
@@ -193,15 +193,15 @@ h5{
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-gray-200 outline-gray-300/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-gray-900;
   }
 }
 
 .swiper-pagination-bullet {
-  background: hsl(var(--primary));
+  background: #2E85FE;
   opacity: 0.3;
   transition: all 0.3s ease;
 }
